@@ -52,7 +52,7 @@ Create a vertex from an intersection of a line/polygon (please choose 2 lines th
 `var intersectionPoint = new intersection(eabc,dfg);`
 
 Create a vertex from an angle from a point:
-![something went wrong with displaying the image](https://kiraprograms.com/diagramsPicture.png)
+![something went wrong with displaying the image](http://kiraprograms.com/diagramsPicture.png)
 
 Write text or a label in a random place:
 `title("the text you want", x position, y position, optional size, optional color`
