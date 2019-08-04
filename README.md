@@ -4,9 +4,10 @@ Draw a geometry problem easily with Diagrams! You don't even need to know javasc
 1. Find the largest circle that can fit inside a polygon
 2. Draw a line based on the equation
 3. An editor where you can can create a diragram withought knowing any code.
-An example with comments:
-http://kiraprograms.com/diagramsHowTo.js.<br>
-Use this by downloading it, or use this line: http://kiraprograms.com/diagrams.js
+4. Download the end result (not take a screenshot)
+## Resources
+An example with comments: http://kiraprograms.com/diagramsHowTo.js.<br>
+Use this without downloading it, or use this link: http://kiraprograms.com/diagrams.js.
 
 # Setting up the screen:
 Change the pixel size: <br>
@@ -26,6 +27,8 @@ Draw and label the vertex:<br>
 `b.label(what you want to label it as, optional direction);`<br>
 Or, just label the coordinates: <br>
 `b.labelCoords(optional direction);`
+Or, just draw the point with no label:
+`b.label();`
 
 Create a line (with at least 2 points):<br>
 `var eabc = new line([list of the vertecies in the line], optional width, optional color);`
@@ -45,9 +48,11 @@ Create polygon that connects those vertecies:<br>
 `var pentagonPolygon = new polygon(pentagon);`<br>
 `pentagonPolygon.draw();`
 
-Create a vertex from an intersection of a line/polygon:
-`var intersection = 
+Create a vertex from an intersection of a line/polygon (please choose 2 lines that only intersect in one place):
+`var intersectionPoint = new intersection(eabc,dfg);`
 
+Create a vertex from an angle from a point:
+![something went wrong with displaying the image](https://kiraprograms.com/diagramsPicture.png)
 
 Write text or a label in a random place:
 `title("the text you want", x position, y position, optional size, optional color`
