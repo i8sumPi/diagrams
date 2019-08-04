@@ -1,6 +1,6 @@
 # Diagrams
 Draw a geometry problem easily with Diagrams! You don't even need to know javascript very well! It uses the Cartesian Coordinate System (the normal one), which is much simpler than the javascript coordinates! <br>
-## Comming soon: <br>
+## Coming soon: <br>
 1. Find the largest circle that can fit inside a polygon
 2. Draw a line based on the equation
 3. An editor where you can can create a diragram withought knowing any code.
