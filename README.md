@@ -66,18 +66,17 @@ abc.draw();
 ## Circle:
 Create a circle with point a in the middle, and a radius of 2. The width and color are the same as in a line. <br>
 ```javascript
-var myCircle = new circle(a, 2, , optional color);
+var myCircle = new circle(a, 2);
 //Draw it:
 myCircle.draw();
 ```
 
 ## Regular Polygon:
-Create a regular polygon (returns a list of vertecies that need to be connected and drawn)<br>
+Create a regular pentagon centered around point a, where each point is 2 units apart from the next (returns a list of vertecies that need to be connected and drawn)<br>
 ```javascript
-var pentagon = makeRegularPolygon(number of points, vertex in the center, the distance between 2 points);
-```
-Create polygon that connects those vertecies:<br>
-```javascript
+var pentagon = makeRegularPolygon(5, a, 2);
+
+//Create polygon that connects those vertecies:
 var pentagonPolygon = new polygon(pentagon);
 pentagonPolygon.draw();
 ```
