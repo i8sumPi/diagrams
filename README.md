@@ -9,7 +9,7 @@ Diagrams can create an image like the one below:
 4. Download the end result (not take a screenshot).
 5. Rotate the regular polygon.
 ## Resources
-An example with comments: http://kiraprograms.com/diagramsHowTo.js.<br>
+An example with comments: http://kiraprograms.com/diagramsHowTo.js. (this is also at the end of the github page)<br>
 Use this without downloading it, or use this link: http://kiraprograms.com/diagrams.js.
 ## Save the end result
 There are 2 ways of doing this:
