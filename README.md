@@ -36,11 +36,11 @@ Draw and label the vertex:<br>
 b.label(what you want to label it as, optional direction);
 ```
 Or, just label the coordinates: <br>
-```
-b.labelCoords(optional direction);
 ```javascript
-Or, just draw the point with no label:
+b.labelCoords(optional direction);
 ```
+Or, just draw the point with no label:
+```javascript
 b.label();
 ```
 
