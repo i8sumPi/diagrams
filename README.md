@@ -1,5 +1,6 @@
 # Diagrams
 Draw a geometry problem easily with Diagrams! You don't even need to know javascript very well! It uses the Cartesian Coordinate System (the normal one), which is much simpler than the javascript coordinate system! Unlike some other graphing programs, you don't need to learn a whole new programming language, because it is just part of javascript (the most common programming language on gitHub).<br>
+This is perfect for creating accurate diagrams when solving geometry problems, or when creating geometry problems. <br>
 Diagrams can create an image like the one below:
 ![something went wrong with displaying the image](http://kiraprograms.com/diagramsExampleImg.png)
 ## Coming soon: <br>
@@ -117,57 +118,4 @@ Find the square root of 5:
 ```javascript
 //Returns 2.2360679775 (the square root of 5)
 sqrt(5)
-```
-## An example (creates the image on top):
-```javascript
-//The center is, by default, (0,0), but can be changed:
-//Change the unit size:
-size(150);
-changeCenter(0.5,1); //now the center of the screen is the point (1,1) (by default it is 0,0).
-//draw the axis:
-axis();
-
-//make a new vertex:
-var b = new vertex(-2,2,"blue");
-var d = new vertex(sqrt(3)*2 - 1,-1);
-var origin = new vertex(0,0);
-
-//Make a regular polygon (creates a list of points that make up the regular polygon, where the bottom edge is horisontal):
-var pent = makeRegularPolygon(5,origin,2/*distance between points*/);
-var e = new vertexFromAngle(pent[3],pi()/4, 5);
-
-//multipoint line (needs at leas 2 vertecies)
-var eabc = new line([e,pent[3],b,pent[1]],3,"orange");
-
-//Polygon (doesn't need to come from a regular polygon)
-var equalateral = new polygon([pent[0],pent[1],pent[2],pent[3],pent[4]],5,"red");
-
-//circle!
-var myCircle = new circle(e,1);
-
-//Find a vertex based on the intersection of 2 lines
-var intersect = new vertexFromIntersection(eabc,equalateral);
-
-//Write text in a random place:
-title("My Cool Graph!",1,3,50,"green");
-
-//draw the shapes
-eabc.draw();
-equalateral.draw();
-myCircle.draw();
-//draw and label the vertecies:
-b.label("b","NW");
-e.label("e","n");
-pent[0].label("g","e");
-pent[1].label("d");
-pent[2].label("c");
-pent[3].label("a","sw");
-pent[4].label("h","se");
-intersect.label("f");
-origin.label("origin","e");
-b.labelCoords("S");
-e.labelCoords("w");
-intersect.labelCoords("w");
-
-//you can run this code to see what it will output!!
 ```
