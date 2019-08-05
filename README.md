@@ -33,6 +33,7 @@ axis();
 ```
 
 # Drawing Things:
+A canvas is automatically created for you. If you want to add your own canvas stuff, you can using ctx. If you want to 
 ## Vertecies:
 Make a vertex in the point (-1,2), with color red (by default it is black):<br>
 ```javascript
