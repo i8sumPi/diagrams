@@ -6,7 +6,6 @@ Draw a geometry problem easily with Diagrams! You don't even need to know javasc
 3. An editor where you can can create a diragram withought knowing any code.
 4. Download the end result (not take a screenshot).
 5. Rotate the regular polygon.
-6. Find the area of a polygon.
 ## Resources
 An example with comments: http://kiraprograms.com/diagramsHowTo.js.<br>
 Use this without downloading it, or use this link: http://kiraprograms.com/diagrams.js.
