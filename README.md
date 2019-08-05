@@ -6,6 +6,7 @@ Draw a geometry problem easily with Diagrams! You don't even need to know javasc
 3. An editor where you can can create a diragram withought knowing any code.
 4. Download the end result (not take a screenshot).
 5. Rotate the regular polygon.
+6. Find the area of a polygon.
 ## Resources
 An example with comments: http://kiraprograms.com/diagramsHowTo.js.<br>
 Use this without downloading it, or use this link: http://kiraprograms.com/diagrams.js.
@@ -29,7 +30,8 @@ Draw the Axis: <br>
 axis();
 ```
 
-# Make shapes
+# Drawing Things:
+## Vertecies:
 Make a vertex in the point (-1,2), with color red (by default it is black):<br>
 ```javascript
 var b = new vertex(-1, 2, "red");
@@ -44,6 +46,7 @@ b.labelCoords(optional direction);
 b.label();
 ```
 
+## Line:
 Create line the list of points e -> a -> b -> c (please use at least 2 points), with a width of 3 (default = 1). We can make it green (the default is black).
 ```javascript
 var eabc = new line([e,a,b,c], 3, "green");
@@ -51,6 +54,7 @@ var eabc = new line([e,a,b,c], 3, "green");
 eabc.draw();
 ```
 
+## Polygon:
 Create a polygon with the a list of the points a,b, and c. A polygon needs at least 3 points. The width and color are the same as in a line.<br>
 ```javascript
 var abc = new polygon([a,b,c], 3, "green");
@@ -58,13 +62,15 @@ var abc = new polygon([a,b,c], 3, "green");
 abc.draw();
 ```
 
-Create a circle with point a in the middle <br>
+## Circle:
+Create a circle with point a in the middle, and a radius of 2. The width and color are the same as in a line. <br>
 ```javascript
-var myCircle = new circle(center vertex, radius, optional width, optional color);
+var myCircle = new circle(a, 2, , optional color);
 //Draw it:
 myCircle.draw();
 ```
 
+# Regular Polygon:
 Create a regular polygon (returns a list of vertecies that need to be connected and drawn)<br>
 ```javascript
 var pentagon = makeRegularPolygon(number of points, vertex in the center, the distance between 2 points);
@@ -75,6 +81,7 @@ var pentagonPolygon = new polygon(pentagon);
 pentagonPolygon.draw();
 ```
 
+# Different ways of making a vertex:
 Create a vertex from an intersection of a line/polygon (please choose 2 lines that only intersect in one place):
 ```javascript
 var intersectionPoint = new intersection(eabc,dfg);
@@ -86,4 +93,10 @@ Create a vertex from an angle from a point:
 Write text or a label in a random place:
 ```javascript
 title("the text you want", x position, y position, optional size, optional color
+```
+
+## Find the javascript coordinates:
+In javascript, the point (0,0) is in the top-left corner. When you increase the x position, you move right. When you increase the y position, you move down. If you want to draw different things of your own, you can use this. 
+```javascript
+var javascriptCoordinates = vertex.actualCoords();
 ```
