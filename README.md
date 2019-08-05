@@ -4,7 +4,8 @@ Draw a geometry problem easily with Diagrams! You don't even need to know javasc
 1. Find the largest circle that can fit inside a polygon
 2. Draw a line based on the equation
 3. An editor where you can can create a diragram withought knowing any code.
-4. Download the end result (not take a screenshot)
+4. Download the end result (not take a screenshot).
+5. Rotate the regular polygon.
 ## Resources
 An example with comments: http://kiraprograms.com/diagramsHowTo.js.<br>
 Use this without downloading it, or use this link: http://kiraprograms.com/diagrams.js.
@@ -29,39 +30,36 @@ axis();
 Make a vertex in the point (-1,2), with color red (by default it is black):<br>
 ```javascript
 var b = new vertex(-1, 2, "red");
-````
 
-Draw and label the vertex:<br>
-```javascript
+//Draw and label the vertex:
 b.label(what you want to label it as, optional direction);
-```
-Or, just label the coordinates: <br>
-```javascript
+
+//Or, just label the coordinates: <br>
 b.labelCoords(optional direction);
-```
-Or, just draw the point with no label:
-```javascript
+
+//Or, just draw the point with no label:
 b.label();
 ```
 
-Create a line (with at least 2 points):<br>
+Create line the list of points e -> a -> b -> c (please use at least 2 points), with a width of 3 (default = 1). We can make it green (the default is black).
 ```javascript
-var eabc = new line([list of the vertecies in the line], optional width, optional color);
+var eabc = new line([e,a,b,c], 3, "green");
+//Draw it:
+eabc.draw();
 ```
 
-Create a polygon:<br>
+Create a polygon with the a list of the points a,b, and c. A polygon needs at least 3 points. The width and color are the same as in a line.<br>
 ```javascript
-var abc = new polygon([list of vertecies in the polygon],optional width, optional color);
+var abc = new polygon([a,b,c], 3, "green");
+//Draw it:
+abc.draw();
 ```
 
-Create a circle: <br>
+Create a circle with point a in the middle <br>
 ```javascript
 var myCircle = new circle(center vertex, radius, optional width, optional color);
-```
-
-Draw a line/ polygon/ circle:<br>
-```javascript
-eabc.draw();
+//Draw it:
+myCircle.draw();
 ```
 
 Create a regular polygon (returns a list of vertecies that need to be connected and drawn)<br>
