@@ -9,7 +9,10 @@ Draw a geometry problem easily with Diagrams! You don't even need to know javasc
 ## Resources
 An example with comments: http://kiraprograms.com/diagramsHowTo.js.<br>
 Use this without downloading it, or use this link: http://kiraprograms.com/diagrams.js.
-
+# Save the end result
+There are 2 ways of doing this:
+1. Take a screenshot of the computer screen.
+2. Right click the image and choose *Save image as...* or *Copy image*.
 # Setting up the screen:
 Change the pixel size to 100 (1 pixel becomes 100 pixels): <br>
 ```javascript
@@ -78,7 +81,7 @@ var intersectionPoint = new intersection(eabc,dfg);
 ```
 
 Create a vertex from an angle from a point:
-![something went wrong with displaying the image](http://kiraprograms.com/diagramsPicture.png)
+![something went wrong with displaying the image](http://kiraprograms.com/vertexFromAngleImg.png)
 
 Write text or a label in a random place:
 ```javascript
