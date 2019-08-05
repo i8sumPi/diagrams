@@ -70,7 +70,7 @@ var myCircle = new circle(a, 2, , optional color);
 myCircle.draw();
 ```
 
-# Regular Polygon:
+## Regular Polygon:
 Create a regular polygon (returns a list of vertecies that need to be connected and drawn)<br>
 ```javascript
 var pentagon = makeRegularPolygon(number of points, vertex in the center, the distance between 2 points);
@@ -81,22 +81,40 @@ var pentagonPolygon = new polygon(pentagon);
 pentagonPolygon.draw();
 ```
 
-# Different ways of making a vertex:
+## Vertex from Intersection:
 Create a vertex from an intersection of a line/polygon (please choose 2 lines that only intersect in one place):
 ```javascript
 var intersectionPoint = new intersection(eabc,dfg);
 ```
-
-Create a vertex from an angle from a point:
+## Vertex from angle and point:
+Create a vertex 2 units away from point a, in the direction pi()/3 radians (see below for refrence on the directions).
+```javascript
+var myVertexFromAngle = new vertexFromAngle(a,pi()/3,2);
+```
 ![something went wrong with displaying the image](http://kiraprograms.com/vertexFromAngleImg.png)
 
-Write text or a label in a random place:
+## Make a title or just random text:
+Write "What is the angle <ABC if CDEFG is a pentagon?" at the point (0,3) with a size of 100px (default = 30px) and color of blue (default is black)
+The text is automatically centered.
 ```javascript
-title("the text you want", x position, y position, optional size, optional color
+title("What is the angle <ABC if CDEFG is a pentagon?", 0, 3, 100, "blue");
 ```
 
 ## Find the javascript coordinates:
 In javascript, the point (0,0) is in the top-left corner. When you increase the x position, you move right. When you increase the y position, you move down. If you want to draw different things of your own, you can use this. 
 ```javascript
 var javascriptCoordinates = vertex.actualCoords();
+```
+# A few shortcuts:
+## Pi (helpful when dealing with radians):
+```javascript
+//returns pi
+pi();
+```
+
+## Square roots:
+Find the square root of 5:
+```javascript
+//Returns 2.2360679775 (the square root of 5)
+sqrt(5)
 ```
