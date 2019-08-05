@@ -3,7 +3,7 @@ Draw a geometry problem easily with Diagrams! You don't even need to know javasc
 Diagrams can create an image like the one below:
 ![something went wrong with displaying the image](http://kiraprograms.com/diagramsExampleImg.png)
 ## Coming soon: <br>
-1. Find the largest circle that can fit inside a polygon
+1. Label the length of a line automatically
 2. Draw a line based on the equation
 3. An editor where you can can create a diragram withought knowing any code.
 4. Download the end result (not take a screenshot).
