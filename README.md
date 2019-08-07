@@ -3,15 +3,6 @@ Draw a geometry problem easily with Diagrams! You don't even need to know javasc
 This is perfect for creating accurate diagrams when solving geometry problems, or when creating geometry problems. <br>
 Diagrams can create an image like the one below:
 ![something went wrong with displaying the image](http://kiraprograms.com/diagramsExampleImg.png)
-## Coming soon: <br>
-1. Label the length of a line automatically
-2. Draw a line based on the equation
-3. An editor where you can can create a diragram withought knowing any code.
-4. Download the end result (not take a screenshot).
-5. Rotate the regular polygon.
-## Resources
-An example with comments: http://kiraprograms.com/diagramsHowTo.js. (this is also at the end of the github page)<br>
-Use this without downloading it, or use this link: http://kiraprograms.com/diagrams.js.
 ## Save the end result
 There are 2 ways of doing this:
 1. Take a screenshot of the computer screen.
@@ -120,3 +111,13 @@ Find the square root of 5:
 //Returns 2.2360679775 (the square root of 5)
 sqrt(5)
 ```
+
+## Coming soon: <br>
+1. Label the length of a line automatically
+2. Draw a line based on the equation
+3. An editor where you can can create a diragram withought knowing any code.
+4. Download the end result (not take a screenshot).
+5. Rotate the regular polygon.
+## Resources
+An example with comments: http://kiraprograms.com/diagramsHowTo.js. (this is also in the wiki)<br>
+Use this without downloading it, or use this link: http://kiraprograms.com/diagrams.js.
