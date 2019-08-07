@@ -3,10 +3,7 @@ Draw a geometry problem easily with Diagrams! You don't even need to know javasc
 This is perfect for creating accurate diagrams when solving geometry problems, or when creating geometry problems. <br>
 Diagrams can create an image like the one below:
 ![something went wrong with displaying the image](http://kiraprograms.com/diagramsExampleImg.png)
-## Save the end result
-There are 2 ways of doing this:
-1. Take a screenshot of the computer screen.
-2. Right click the image and choose *Save image as...* or *Copy image*.
+
 # Setting up the screen:
 Change the pixel size to 100 (1 pixel becomes 100 pixels): <br>
 ```javascript
@@ -112,6 +109,10 @@ Find the square root of 5:
 sqrt(5)
 ```
 
+## Save the end result
+There are 2 ways of doing this:
+1. Take a screenshot of the computer screen.
+2. Right click the image and choose *Save image as...* or *Copy image*.
 ## Coming soon: <br>
 1. Label the length of a line automatically
 2. Draw a line based on the equation
